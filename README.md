@@ -1,6 +1,8 @@
 middleman-ember-template: with Ember.js
 =======================================
 
+I included a demo layout with sample Ember templates and controllers. Template from [here](https://github.com/rossta/middleman-ember-template).
+
 **Template Layout**
 
 	source/
