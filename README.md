@@ -32,6 +32,7 @@ Install middleman:
 gem install middleman
 ```
 
+Clone the repo:
 ```
 $ git clone git@github.com:landonmarder/ember-middleman-demo.git <PROJECT NAME>
 ```
