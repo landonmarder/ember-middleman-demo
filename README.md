@@ -27,21 +27,13 @@ You may also want to checkout the [Ember.js with Middleman example](https://gith
 Usage
 -----
 
-Download or clone into ~/.middleman/ember
-
-```
-$ git clone git://github.com/rossta/middleman-ember-template.git ~/.middleman/ember
-```
-
-Install middleman > 3.1, at present that means:
+Install middleman:
 ```
 gem install middleman
 ```
 
-Initialize a new middleman project
-
 ```
-$ middleman init my_project --template=ember
+$ git clone git@github.com:landonmarder/ember-middleman-demo.git <PROJECT NAME>
 ```
 
 Then bundle, and start the middleman server
