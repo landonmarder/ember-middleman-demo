@@ -5,6 +5,44 @@
     <link href="stylesheets/application.css" media="all" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <script type="text/x-handlebars">
+        <nav class='navbar navbar-default' role='navigation'>
+          <div class='navbar-header'>
+          {{#link-to 'index' classNames='navbar-brand'}}
+            Work-Bench
+          {{/link-to}}
+          </div>
+          <ul class='nav navbar-nav'>
+            <li>
+              {{#link-to 'about'}}
+                About Site
+              {{/link-to}}
+            </li>
+          </ul>
+        </nav>
+          {{outlet}}
+      </script>
+
+      <script type="text/x-handlebars" id="index">
+        <div class='row'>
+          <div class='col-md-8'>
+            <h2>{{siteTitle}}</h2>
+            <p>It is {{currentTime}}</p>
+          </div>
+        </div>
+      </script>
+
+      <script type="text/x-handlebars" id="about">
+        <div class='row'>
+          <div class='col-md-8'>
+            <h2>{{siteTitle}}</h2>
+            <p>
+              Emberoverflow is a question and answer site for programmers . . .
+            </p>
+          </div>
+        </div>
+      </script>
+
     <script src="javascripts/application.js" type="text/javascript"></script>
   </body>
 </html>

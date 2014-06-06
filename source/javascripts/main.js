@@ -5,9 +5,18 @@
 //= require_tree ./templates
 //= require_tree ./views
 
-window.App = Ember.Application.create({
-  Store: DS.Store.extend({
-    revision: 11,
-    adapter: DS.fixtureAdapter
-  })
+App = Ember.Application.create({
+  // sets application root element
+  // rootElement: '#element-id',
+
+  // logs a message to console once the URL changes (for debugging)
+  LOG_TRANSITIONS: true,
+});
+
+App.Store = DS.Store.extend({
+  adapter: DS.FixtureAdapter
+})
+
+App.Router.map(function() {
+  this.route('about');
 });
